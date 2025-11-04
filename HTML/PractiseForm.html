@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Workshop</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <div>
+            <h2>Coding Workshop Registeration Form</h2>
+        </div>
+
+        <div>
+            <label for="fName">Full Name</label> <br>
+            <input type="text" name="fName" id="fName" required>
+        </div>
+
+        <div>
+            <label for="email">Email id</label> <br>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age" min="16" max="100">
+        </div>
+
+        <div>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="male">Male
+            <input type="radio" name="gender" id="female" value="female">Female
+        </div>
+
+        <div>
+            <label for="PrgLang">Which Programming Languages You Know?</label><br>
+            <input type="checkbox" name="PrgLang" id="html" value="HTML">HTML
+            <input type="checkbox" name="PrgLang" id="CSS" value="CSS">CSS
+            <input type="checkbox" name="PrgLang" id="js" value="JavaScript">JavaScript
+            <input type="checkbox" name="PrgLang" id="py" value="Python">Python
+        </div>
+
+        <div>
+            <label for="SessionDate">Preferred Session Date</label><br>
+            <input type="date" name="SessionDate" id="SessionDate" required>
+        </div>
+
+        <div>
+            <label for="Resume">Upload Your Resume(optional)</label><br>
+            <input type="file" name="Resume" id="Resume">
+        </div>
+        
+        <div>
+            <label for="learningL">Start Your Learning Level</label><br>
+            <select name="learningL" id="learningL" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="msg">Write a Short Introduction about Yourself</label><br>
+            <textarea name="msg" id="msg" rows="2" cols="20" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit Registeration">
+            <input type="reset" value="Clear Form">
+        </div>
+    </form>
+</body>
+</html>

@@ -13,19 +13,19 @@
     <form action="file_path" method="post" name="form" id="form"> <!--action attributes generally contains API, file where the data needs to be stored or to be called when form is submitted-->
         <div>
         <label for="Name">Name:</label> <br>
-        <input type="text" name="username" value="Khushboo" placeholder="Enter your name" required>
+        <input type="text" name="Name" value="Khushboo" id="Name" placeholder="Enter your name" required>
         </div>
         <div>
             <label for="age">Age:</label> <br>
-            <input type="number" required>
+            <input type="number" name="age" id="age">
         </div>
         <div>
             <label for="email">Email</label> <br>
-            <input type="email">
+            <input type="email" name="email" id="email"> 
         </div>
         <div>
             <label for="password">Create a Password</label> <br>
-            <input type="password">
+            <input type="password" name="password" id="password">
         </div>
         <div>
             <label for="phoneNo">Contact Number:</label> <br>
@@ -49,7 +49,7 @@
 </div>
 <div>
    <label for="topics">Choose Topics for meetup:</label>
-    <select name="Topics">
+    <select name="topics">
         <option value="HTML-Tags">HTML Tags</option>
         <option value="Css">CSS</option>
         <option value="JS">JS</option>
