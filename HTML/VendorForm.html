@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <Form>
+    </title>
+</head>
+
+<body>
+
+    <h2 align="centre">Flipkart Vendor Form</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Name:</label> <br>
+            <input type=" text" id="name" name="name" placeholder="First Name" required>
+            <input type="text" name="name" id="name" placeholder="Last Name" required>
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" min="1993-09-03" max="2025-12-12">
+        </div>
+        <br>
+        <div>
+            <label for="Loc">Current Location:</label> <br>
+            <textarea name="Loc" id="Loc" cols="20" rows="4"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="AadharCard">Upload your AadharCard:</label><br>
+            <input type="file" name="AadharCard" id="AadharCard">
+        </div>
+        <br>
+        <div>
+            <label for="PanC">PAN Card Number:</label> <br>
+            <input type="tel" maxlength="10" pattern="^[A-Z]{5}[0-9]{4}[A-Z]$" id="PanC">
+        </div>
+        <br>
+        <div>
+            <label for="sell">Items to sell:</label> <br>
+            <select name="sell">
+                <option value="Apple">Fruits</option>
+                <option value="Kale">Vegetables</option>
+                <option value="Rice">Grains</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="Availability">Are you in India?</label><br>
+            <input type="radio" name="Availability" value="Yes">Yes
+            <input type="radio" name="Availability" value="No">No
+        </div>
+        <br>
+        <div>
+            <label for="Delivery">Locations open for Delivery:</label> <br>
+            <input type="checkbox" name="Delivery" value="Mumbai">Mumbai
+            <input type="checkbox" name="Delivery" value="Delhi">Delhi
+            <input type="checkbox" name="Delivery" value="Bangalore">Bangalore
+        </div>
+        <br>
+        <div>
+            <input type="Submit" value="Submit">
+            <input type="Reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

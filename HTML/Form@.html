@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <!-- defines the action which is going to be performed on form submitted -->
+    <!-- You add file path in this action, this file contains the server side code which
+     handles your data. In actual implementation action attribute is not provided as it will be easily hackable there is a different way
+    to call API which has not been taught.
+    Post method is secured as while submit the value isnt visible on the web address and if you write method get it will be vi
+    visible on web address. Therefore, for FORM we use POST.-->
+    <form action="file_path" method="post" name="form" id="form"> <!--action attributes generally contains API, file where the data needs to be stored or to be called when form is submitted-->
+        <div>
+        <label for="Name">Name:</label> <br>
+        <input type="text" name="Name" value="Khushboo" size="100" maxlength="10" id="Name" placeholder="Enter your name" required>
+        <!--maxlength doesn't for work for numbers input type. 
+        max length works for password, text, email,tel 
+        Size for width of input box
+        min and max value works with numbers, range, date
+        pattern attribute: here you add the regex
+        eg: indian phone number regex  -->
+    </div>
+        <div>
+            <label for="age">Age:</label> <br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"name="email" id="email"> 
+        </div>
+        <div>
+            <label for="password">Create a Password</label> <br>
+            <input type="password" name="password" maxlength="50" id="password">
+        </div>
+        <div>
+            <label for="phoneNo">Contact Number:</label> <br>
+            <input type="tel" maxlength="10" 
+            pattern="^(?:\+91|0)?[6-9][0-9]{9}$">
+        </div>
+        <div>
+            <label for="gender">Gender:</label> <br>
+            <input type="radio" value="male" name="gender">Male <br>
+            <input type="radio" value="female" name="gender">Female 
+        </div>
+        <!-- radio button for single choice -->
+         <div>
+            <label for="skills">Your skills:</label>
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="js" > JS
+         </div>
+<div>
+    <label for="time">Preferred time for meetup:</label>
+    <input type="date" min="2025-01-01" max="2025-12-12">
+</div>
+<div>
+   <label for="topics">Choose Topics for meetup:</label>
+    <select name="topics">
+        <option value="HTML-Tags">HTML Tags</option>
+        <option value="Css">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+</div>
+<div>
+    <label for="msg">Any Questions/Messages?</label>
+    <textarea name="msg" id="msg" cols="10" rows="2" placeholder="Enter your message here"></textarea>
+</div>
+<div>
+    <input type="submit">
+    <input type="reset" disabled>
+</div>
+</form>
+    
+</body>
+</html>
