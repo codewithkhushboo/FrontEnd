@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <!-- defines the action which is going to be performed on form submitted -->
+    <!-- You add file path in this action, this file contains the server side code which
+     handles your data. In actual implementation action attribute is not provided as it will be easily hackable there is a different way
+    to call API which has not been taught-->
+    <form action="file_path" method="post"> <!--action attributes generally contains API, file where the data needs to be stored or to be called when form is submitted-->
+        <div>
+        <label for="Name">Name:</label> <br>
+        <input type="text" name="username" value="Khushboo" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="age">Age:</label> <br>
+            <input type="number" required>
+        </div>
+        <div>
+            <label for="email">Email</label> <br>
+            <input type="email">
+        </div>
+        <div>
+            <label for="password">Create a Password</label> <br>
+            <input type="password">
+        </div>
+        <div>
+            <label for="phoneNo">Contact Number:</label> <br>
+            <input type="tel">
+        </div>
+        <div>
+            <label for="gender">Gender:</label> <br>
+            <input type="radio" value="male" name="gender">Male <br>
+            <input type="radio" value="female" name="gender">Female 
+        </div>
+        <!-- radio button for single choice -->
+         <div>
+            <label for="skills">Your skills:</label>
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="js" > JS
+         </div>
+<div>
+    <label for="time">Preferred time for meetup:</label>
+    <input type="datetime-local">
+</div>
+<div>
+   <label for="topics">Choose Topics for meetup:</label>
+    <select name="Topics">
+        <option value="HTML-Tags">HTML Tags</option>
+        <option value="Css">CSS</option>
+        <option value="JS">JS</option>
+    </select>
+</div>
+<div>
+    <label for="msg">Any Questions/Messages?</label>
+    <textarea name="msg" id="msg" cols="10" rows="2"></textarea>
+</div>
+<div>
+    <input type="submit">
+    <input type="reset" disabled>
+</div>
+
+<div>
+    <label for="extra-input">Extra input types</label>
+    <input type="color"> <br>
+    <input type="date"> <br>
+    <input type="month"><br>
+    <input type="week"> <br>
+    <input type="file"> <br>
+    <input type="url"> <br>
+    <input type="range"> <br>
+    <input type="hidden"> <!--keeps item hidden-->
+
+    <input type="image" src="../images/Web.jpg" width="100px" height="100px">
+<input type="button" value="Submit">
+<button>SUBMIT</button>
+<input type="search">
+</div>
+
+<div>
+    <label for="event"> Name of the event:</label>
+    <input type="text" name="eventName" value="JSfest" readonly>
+</div>
+    </form>
+</body>
+</html>
