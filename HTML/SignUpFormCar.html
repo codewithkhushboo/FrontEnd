@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>SignUp Form Car</Title>
+</head>
+
+<body>
+    <header>
+        <h1>SignUp Form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name*:</label> <br>
+                <input type="text" id="name" placeholder="Please enter your name" required>
+            </div>
+
+            <div>
+
+                <label for="Email">Email*:</label> <br>
+                <input type="email" name="email" id="email" placeholder="E-maild id" required>
+            </div>
+            <div>
+                <label for="gender">Gender*:</label> <br>
+                <input type="radio" id="gender_m" name="gender" required>
+                <label for="gender_m">Male</label>
+                <input type="radio" id="gender_f" name="gender" required>
+                <label for="gender_f">Female</label>
+            </div>
+
+            <div>
+                <label for="cars">Car Brands</label> <br>
+                <select name="cars" id="cars" required>
+                    <option value="" disabled selected>---Please choose an option---</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="merc">Mercedes</option>
+                </select>
+            </div>
+            <div>
+                <label for="age">Age</label> <br>
+                <input type="number" name="age" id="age" min=18 max=100 placeholder="Age" required>
+            </div>
+
+            <div>
+                <label for="dob">DOB</label> <br>
+                <input type="date" name="dob" id="dob" required min="1990-01-01" max="2025-12-12">
+            </div>
+            <div>
+                <label for="phNu">Phone Number</label> <br>
+                <input type="tel" name="phNu" id="phNu" placeholder="XXX-XXX-XXX">
+            </div>
+            <div>
+                <label for="password">Password*</label> <br>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div>
+                <label for="tos">I agree to TOS</label>
+                <input type="checkbox" id="tos" required>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
