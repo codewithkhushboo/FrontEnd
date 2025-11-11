@@ -1,0 +1,10 @@
+input[type="text"]{
+    font-size:20;
+    background-color: cyan;
+}
+input[type="email"]{
+    background-color: green;
+}
+a[target="_blank"]{
+    background-color: yellow;
+}

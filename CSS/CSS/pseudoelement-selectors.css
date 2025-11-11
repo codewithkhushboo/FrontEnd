@@ -1,0 +1,25 @@
+/* Pseudo element selectors are used to style specific part of an element
+syntax: selector::pseudo-element */
+
+p::first-line{
+    color: pink;
+}
+p::first-letter{
+    color: red;
+}
+p::before{
+    content: "<----"; 
+}
+p::after{
+    content: "----->";
+}
+li::before{
+    content: ".";
+}
+li::after{
+    content: ".";
+}
+li::marker{
+    color: green;
+    font-weight: 800;
+}
