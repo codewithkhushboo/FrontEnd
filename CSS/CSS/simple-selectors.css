@@ -1,0 +1,48 @@
+/* Universal selector(denoted by * symbol): selects all the element in your document */
+*{
+    color: red;
+}
+/* every element present inside the documents gets red color */
+
+/* Tag selector: selects all the elements with the given tag name */
+h1{
+    color: green;
+}
+p{
+    color: blue;
+}
+
+/* Class selector(.class_name): selects all the elements with the given classname
+Group them and give same name: class , 20 elements can have same class
+.class_name. Classes is used for grouping 
+eg: Classes are created to group students in school. Class 8th student will have same syllabus
+grouping different elements like p,h1, etc we use class selector*/
+.para{
+    color:pink;
+}
+
+/* id is unique
+Id selector(#id_name): selects the element with the given id.
+Id is mainly used in JS. To an element if i have to add specifoc style
+Id is always unique. No two element can have same value. eg: roll no.
+*/
+#para_1{
+    color: aqua;
+}
+
+/*Grouping selector(,): used to select group different selectors i.e tag, class, id
+Gs is used to group tag, id and class selectors. Can group class and id, class and tag, tag and id*/
+h2,h3{
+    color: blueviolet;
+}
+.group, .group1{
+    color: black ;
+}
+/*element.class selector: selects the specified element with the specified class */
+p.para{
+    color: yellowgreen;
+
+}
+span.para{
+    color: brown;
+}

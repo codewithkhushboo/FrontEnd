@@ -1,0 +1,44 @@
+/* General Sibling selector(~): targets all the given tags
+that are sibling to a specific tag.
+eg: targets all the p tags which are general siblings of the 
+span tag and come after span tag
+ */
+/* span ~ p {
+    color: pink;
+} */
+/* target all .para class elements which are siblings of span tag */
+
+/* span ~ .para{
+    color: red;
+}
+
+span ~ #para_1{
+    color: black;
+} 
+
+.title ~ .para, .title ~ #para_1{
+    color: green;
+} */
+
+/* Adjacent sibling: (+): selects only that sibling of a given tag which comes
+exactly after the given element and has same parent
+eg: target the p tag that is adjacent sibling of h1
+*/
+h1 + p{
+    color: blueviolet;
+}
+
+/* Child selector (>): selects only the direct children elements */
+
+div > p{
+    color: red;
+}
+/* 
+Descendant selector: selects all the descendants
+(all levels of children of a given tag)
+
+ */
+
+ div p{
+    color: blueviolet;
+ }
