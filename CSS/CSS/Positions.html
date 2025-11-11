@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <link rel="stylesheet" href="./position.css">
+    <style>
+        .parent{
+            height: 200vh;
+            padding: 30px;
+            background-color: pink;
+        }
+        .child{
+            padding: 30px;
+            border: 1px solid black;
+
+        }
+        .child-one{
+            background-color: lightskyblue;
+            
+        }
+        .child-two{
+            background-color: violet;
+        }
+        .child-three{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position in CSS</h1>
+    <ol>
+        <li>Static: the original position of an element</li>
+        <li>Realtive: Element is positioned Realtive to it's original/normal 
+            position. Same as static positioning, just that here we can move 
+            the element by adding offset value. 
+            Elements stays in normal document flow
+        </li>
+        <li>Absolute: Element is positioned relative to its parent. if parent is 
+            not present it will consider body tag as parent. 
+            Element is removed from the normal document flow, this means no space is created
+            for the element.
+            Absolute will work with parent only when parent position is relative.
+        </li>
+        <li>Fixed: Element is always positioned relative to the viewport.
+            Element always stays in the same position even on scrrolling.
+        Element is removed from normal document flow</li>
+    <li>Sticky: Element is positioned to the normal document flow
+        Till the element hits the top, it has normal position, after it touches
+        the top it's position becomes fixed.
+    </li>
+    
+    </ol>
+
+    <div class="parent">
+        parent
+        <div class="child child-one">One</div>
+        <div class="child child-two">Two</div>
+        <div class="child child-three">Three</div>
+ <div class="child child-four">Four</div>
+
+ <nav class="child navbar">
+    <a href="">home</a>
+    <a href="">home</a>
+    <a href="">home</a>
+    <a href="">home</a>
+    <a href="">home</a>
+
+ </nav>
+    </div>
+</body>
+</html>

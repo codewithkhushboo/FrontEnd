@@ -1,0 +1,43 @@
+.parent{
+position: relative;
+top: opx;
+}
+
+.child{
+
+}
+.child-one{
+            background-color: lightskyblue;
+            position: relative;
+            top: 0px;
+            bottom: 0px;
+        }
+
+.child-two{
+    position: absolute;
+    left:10px;
+    top:0px;
+}
+
+.child-three{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+.child-four{
+    position: sticky;
+    top:10px;
+}
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}

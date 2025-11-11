@@ -8,3 +8,7 @@ input[type="email"]{
 a[target="_blank"]{
     background-color: yellow;
 }
+input[type="range" i]{
+    color: yellow;
+    
+}
