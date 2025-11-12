@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Universal margin and padding is given zero since body tag take 
+their own margin and padding */
+
+.navbar {
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    font-size: 12px;
+    height: 50px;
+
+}
+
+.title p {
+    float: left;
+    margin: 15px 20px;
+
+}
+
+
+.nav-items {
+
+    padding: 0px 10px;
+    margin: 15px 20px;
+    float: right;
+
+
+
+}
+
+.nav-items a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px
+}
+
+/* float are used to move elements to left or right */
+.container {
+    background-color: grey;
+    padding: 30px;
+}
+
+.books-table {
+    background-color: white;
+    margin: 0px 20%;
+    padding: 30px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+}
+
+.books-table:hover {
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.books-table h1 {
+    padding: 10px 0px;
+}
+
+.books-table table,
+tr,
+td,
+th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+
+.books-table table {
+    width: 100%;
+}
+
+.books-table th.col {
+    text-align: left;
+}
+
+.ns-table {
+    margin: 10px 0px;
+}
+
+.registration-form{
+    background-color: white;
+    margin: 10px 20%;
+    padding: 30px;
+    border-radius: 5px;
+
+}
+
+
+.registration-form .form-controller{
+    margin: 10px 10px;
+}
+
+.form-control label{
+    font-size: 12px;
+}
+ .form-controller input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid grey;
+    padding: 2px 5px;
+    font-size: 12px;
+
+ }
+
+ .submit-button{
+    background-color: black;
+    color: white;
+    height: 30px!important;
+    width: 102%!important;
+ }
+
+ .submit-button:hover{
+    background-color: white;
+    color:black ;
+    cursor: pointer;
+    border: 1px solid black;
+ }
+
+
+#fname:focus,
+#lname:focus,
+#email:focus {
+    background-color: rgb(156, 211, 227);
+}
+
+.top-button{
+    background-color: white;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* for smooth scroll */
