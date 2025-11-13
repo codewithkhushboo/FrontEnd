@@ -31,7 +31,7 @@ and red z-index is 2 it is above red
 z-index deals with position
 example: To overlap text on image
  */
-/* .wrapper{
+.wrapper{
     position: relative;
 }
 
@@ -40,7 +40,7 @@ example: To overlap text on image
     z-index: 10;
     top: 20px;
     color: white;
- } */
+ } 
   .paper{
     background-color: #000000;
     height: 50px;

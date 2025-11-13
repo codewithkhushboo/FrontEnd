@@ -1,0 +1,33 @@
+/* Converting div block to inline */
+
+
+/* div{
+display:inline;
+} */
+
+/* inline and inline-block they are on same line.
+ inline and inline-block difference:
+In inline we cannot give width and height
+Though they look same but in inline-block we can give width and height
+in block it complete space of screen but inline-block does not*/
+/* div{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+} */
+
+span{
+    display: block;
+    width: 100px;
+    height: 200px;
+}
+div{
+    width: 150px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid black;
+    display: inline-block;
+}
+div:hover{
+    display: none;
+}
