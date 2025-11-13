@@ -111,14 +111,14 @@ th {
 
  }
 
- .submit-button{
+ #submit-button{
     background-color: black;
     color: white;
-    height: 30px!important;
-    width: 102%!important;
+    height: 30px;
+    width: 102%;
  }
 
- .submit-button:hover{
+ #submit-button:hover{
     background-color: white;
     color:black ;
     cursor: pointer;

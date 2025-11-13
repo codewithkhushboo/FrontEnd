@@ -1,0 +1,55 @@
+/* Position and Order of appearance */
+ /* universal selector: 0 */
+
+*{
+    color: pink;
+ }
+
+ /* tag and pseudo-element selector: 1 */
+
+::marker{
+    color: yellow;
+ }
+ h3{
+        color: red;
+    }
+h1{
+
+    color: blue;
+    font-weight: 200 !important;
+    font-weight: 300;
+}
+
+h2{
+color: blue !important;
+color: green;
+}
+
+li::marker{
+    text-align: end;
+}
+/* class, attribute and pseudo-class selector: 10s */
+    .heading{
+        color: green;
+    }
+
+    a:link{
+        color: red;
+    }
+    [href="#"]{
+        color: blue;
+    }
+/* order of appearance attribut is last so it was taken here */
+    
+
+/* id selector has specificty of 100 */
+#h1{
+    color: maroon;
+}
+
+/* inline css has specificity of 1000 */
+
+/* !important specificity is 10000 */
+*{
+    color: burlywood !important;
+}

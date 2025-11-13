@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cascading.css">
+    <h1>
+        <style>
+            h1{
+                color: green;
+            }
+            h2{
+                color: yellow;
+            }
+        </style>
+    </h1>
+</head>
+<body>
+<!-- Position and Order of appearance: The styles that are added at the ends
+     are the once that are given the most priority. -->
+<!-- Whichever style is applied at the end that style is applied to html element -->
+        <h1 style="color: red;">Cascading in CSS</h1>
+
+     <style>
+            h1{
+                color: green; /*Note: This is not a good practise
+                but for understanding we did this. always write
+                style tag in head tag*/
+            }
+        </style>
+<!-- inline CSS has the highest priority. Specificity of style attribute
+   which is inline css is much more therefore even though internal CSS is
+   at last but inline css will be applied -->
+
+
+<h2>Woohoo</h2>
+<!-- Position and order of appearance done -->
+
+<!-- Origin:
+ The css you write isnt only applied to the page
+ CSS comes from user-agent ie. broswer provides css 
+ to the browser.
+ Local user style CSS is provided by OS
+ Authored CSS: style written by you -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam natus, ipsum veniam totam ipsam cumque maiores voluptatum error corrupti, necessitatibus repudiandae veritatis, saepe assumenda aspernatur? Voluptas provident perspiciatis quibusdam dolore?</p>
+ <label for="Car">Car</label> 
+<select name="" id="">
+<option value="bmw">BMW</option>
+<option value="bmw">BMW</option>
+<option value="bmw">BMW</option>
+
+ </select>
+
+<ul>
+    <li>list item</li>
+</ul>
+
+<h3 class="heading" id="h1" style="color: chartreuse;">Specificity in CSS</h3>
+<a href="#">link</a>
+</body>
+</html>
