@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Normal flow boxes */
+.box1 { background: teal; }
+.box2 { background: purple; }
+.box4 { background: orange; }
+
+/* Absolute (removed from flow) */
+.abs {
+  background: red;
+  position: absolute;
+  top: 20px;   /* placed freely */
+  right: 20px;
+}
+
+/* Fixed box */
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="box box1">Box 1 (Normal Flow)</div>
+<div class="box box2">Box 2 (Normal Flow)</div>
+
+<div class="box abs">Box 3 (Absolute - Removed From Flow)</div>
+
+<div class="box box4">Box 4 (Normal Flow)</div>
+
+<button class="fixed">Fixed Button</button>
+
+<h1>Normal Document Flow — Summary</h1>
+
+    <p>
+        Normal document flow is the <strong>natural way elements appear on a webpage</strong>:
+    </p>
+
+    <ul>
+        <li>Elements come one after another, top to bottom.</li>
+        <li>Block elements stack vertically.</li>
+        <li>Inline elements sit next to each other.</li>
+        <li>Each element takes its own space and pushes the next element down.</li>
+    </ul>
+
+    <p>
+        <strong>In short:</strong><br>
+        Normal flow = elements behave normally and follow the natural layout.<br>
+        Removed from flow = element is taken out, floats freely, and does NOT take space.
+    </p>
+
+    <h2>Positions that stay in normal flow</h2>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>sticky (before sticking)</li>
+    </ul>
+
+    <h2>Positions removed from normal flow</h2>
+    <ul>
+        <li>absolute</li>
+        <li>fixed</li>
+    </ul>
+
+    <p><strong>One-line definition:</strong><br>
+        Normal document flow is the default arrangement of elements on the page where each element takes space and affects the others.
+    </p>
+
+</body>
+</html>
