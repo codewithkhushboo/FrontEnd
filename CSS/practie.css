@@ -1,0 +1,20 @@
+.container{
+    background-color: grey;
+    height: 500px;
+    width: 20;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    /* justify-content: space-evenly; */
+    /* align-items: stretch; */
+    align-content:stretch;
+
+
+}
+.item{
+    background-color: blue;
+    margin: 30px;
+    width: 200px;
+}

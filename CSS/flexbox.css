@@ -1,0 +1,32 @@
+.container{
+    background-color: lightblue;
+    height:400px ;
+    display: flex;
+    /* flex-direction: row (default); */
+    /* flex-direction: row-reverse; */
+    /* flex-direction:column; */
+    /* flex-direction:column-reverse ; */ 
+    /* Flex-direction changes the order and placement as well */
+   /* flex-wrap: wrap; */
+   /* flex-wrap: nowrap, wrap, wrap-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+    /* justify-content: start(default),end, center, space-around, space-between, space-evenly; */
+justify-content: start;
+/* align-items: flex-start,center, flex-end, stretch(default); y-axis */
+/* align-items: center; */
+/* align-content:normal(default), flex-start, flex-end, center, stretch, space-around, space-between,space-evenly; y-axis */
+align-items: stretch;
+/* row-gap: 50px;
+column-gap: 50px; */
+/* gap:row-gap column-gap; */
+gap: 50px 20px;
+}
+.container .item{
+    background-color: rgb(50,75,243);
+    margin: 10px 10px;
+    color: white;
+    width: 20%;
+    /* display: inline-block; flex is better */
+   
+}

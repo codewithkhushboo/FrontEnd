@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    /* by default body tag gives margin and padding. Therefore, giving it zero */
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+   justify-content: space-between;
+     background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    align-items: center; 
+    width: 100%;
+    height: 65px;
+    padding: 0px 40px; 
+/* due to padding the width 40px of content is increasing. By default 
+in box model since we gave 100 percent to content and we added 40px 
+to content. The content width is 140 and not 100 and we get slider
+since the viewport is always at 100 and to see extra 40 we got sliderbar
+Box-sizing is a property that allows to include the padding and border into
+the total width.
+width: content width+padding+padding+border
+box-sizing: border-box; helps to include padding and margin values
+*/
+/* box-sizing: border-box; */
+position: fixed;
+z-index: 1000;
+top: 0;
+/* left: 0;
+right: 0; give wodth 100 percent or left and right value 0 for navbar width 
+to be fullscreen */
+}
+
+.logo img{
+    width: 7.5%;
+   
+}
+ .content{
+    display: flex;
+    /* width: 50%; */
+    /* justify-content: space-between; */
+    column-gap: 50px;
+    
+}
+.nav-items a{
+    text-decoration:none ;
+    color: rgb(145,87,215);
+}
+/* home-section */
+.container{   /*main*/
+    position: relative;
+    top: 65px;
+    /* margin-top: 65px; either top or margin-top */
+}
+.home-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+.home-container .img {
+    display: flex;
+    /* align-items: center; */
+    flex-direction:column ; 
+    justify-content: center;
+    width: 50%;
+}
+.home .img img{
+    width: 80%;
+}
+.home-container .home-content {
+    width: 50%;
+    display: flex;
+    flex-direction:column ; /*Flex-direction changes the direction of x to y-axis and y to x-axis */
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.home-content span{
+    color: red;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height:80px ;
+}
+
+/* about section */
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    background-color: rgb(156, 156, 227);    
+
+}
+.about-container .frame, .about-container .about-content{
+    width: 40%;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Skills section */
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4% 0px;
+}
+
+.skill-items{
+    display: flex;
+    width:100%; 
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    padding: 2% 0px;
+    gap: 25px 1px;
+
+}
+
+.skill-items .items{
+    border: 1px solid #bed8ff;
+    padding: 10px 20px;
+    color: lightblue;
+    border-radius: 8px;
+    border-bottom: 2px solid black;
+    width: 20%;
+   
+    
+}
