@@ -114,6 +114,16 @@ to be fullscreen */
     align-items: center;
     padding: 4% 0px;
 }
+.skill-items .items{
+    border: 1px solid #bed8ff;
+    padding: 10px 20px;
+    color: lightblue;
+    border-radius: 8px;
+    border-bottom: 2px solid black;
+    width: 20%;
+   
+    
+}
 
 .skill-items{
     display: flex;
@@ -125,16 +135,7 @@ to be fullscreen */
 
 }
 
-.skill-items .items{
-    border: 1px solid #bed8ff;
-    padding: 10px 20px;
-    color: lightblue;
-    border-radius: 8px;
-    border-bottom: 2px solid black;
-    width: 20%;
-   
-    
-}
+
 .contact-container{
     margin-top: 10px;
     display: flex;
