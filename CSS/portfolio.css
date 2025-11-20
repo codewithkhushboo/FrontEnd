@@ -29,7 +29,7 @@ position: fixed;
 z-index: 1000;
 top: 0;
 /* left: 0;
-right: 0; give wodth 100 percent or left and right value 0 for navbar width 
+right: 0; give width 100 percent or left and right value 0 for navbar width 
 to be fullscreen */
 }
 
@@ -50,7 +50,7 @@ to be fullscreen */
 }
 /* home-section */
 .container{   /*main*/
-    position: relative;
+    position: relative; /*why relative?*/
     top: 65px;
     /* margin-top: 65px; either top or margin-top */
 }
@@ -66,7 +66,8 @@ to be fullscreen */
     justify-content: center;
     width: 50%;
 }
-.home .img img{
+.home-container
+ .img img{
     width: 80%;
 }
 .home-container .home-content {
@@ -133,4 +134,21 @@ to be fullscreen */
     width: 20%;
    
     
+}
+.contact-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aliceblue;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    /* background-color: navajowhite; */
+    /* border: 1px solid black; */
+
 }

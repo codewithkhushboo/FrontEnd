@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 65px;
+    padding: 0px 40px;
+    /* box-sizing: border-box; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+
+ .logo img{
+    width: 7.5%;
+ }
+
+ .content{
+    display: flex;
+    column-gap: 50px;
+ }
+ .nav-items a{
+    text-decoration: none;
+    color: rgb(237, 178, 237);
+    
+ }
+ .container{
+    position: relative;
+    top: 65px;
+ }
+ .home-container{
+    display: flex;
+    justify-content: space-around;
+ }
+ .home-container .home-content{
+    width: 50%;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+ }
+/* .home-container .img{
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;} */
+
+.home-container .img img{
+    width: 80%;
+}
+
+.home-content span{
+    color: red;
+}
+
+.home-content h1{
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    background-color: aliceblue;
+}
+.about-container .frame,.about-container .about-content{
+    width: 40%;
+}
+
+.about-container .about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.skills-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.items .skill-items{
+    border: 1px solid #bed8ff;
+    padding: 10px 20px;
+    color: lightblue;
+    border-radius: 8px;
+    border-bottom: 2px solid black;
+    width: 20%;
+}
+
+.items{
+    display: flex;
+    width:100%; 
+    justify-content:space-around ;
+    flex-wrap: wrap;
+    padding: 2% 0px;
+    gap: 25px 1px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contact-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aliceblue;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    /* background-color: navajowhite; */
+    /* border: 1px solid black; */
+
+}
