@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.navbar{
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    font-size: 12px;
+    height: 50px;
+
+}
+.title p{
+    float: left;
+    margin: 15px 20px;
+    font-size: 12px ;
+}
+
+
+.nav-items{
+    float: right;
+    padding: 0px 20px;
+    margin: 15px 20px;
+    font-size: 12px;
+}
+
+.nav-items a{
+    margin: 15px 20px;
+    text-decoration: none;
+    color: white;
+    /* margin-left: 20px; */
+}
+
+.container{
+    background-color: gray;
+    padding: 30px;
+}
+
+.books-table{
+    background-color: white;
+    margin: 0 20%;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.books-table h1{
+    padding: 10px 0px;
+}
+
+.books-table table, tr,th,td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px 10px;
+
+}
+.books-table:hover {
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.books-table table{
+    width: 100%;
+}
+.ns-table{
+    margin: 10px 0px;
+}
+
+.books-table th.col{
+    text-align: left;
+}
+
+.registration-form{
+    background-color: white;
+    margin: 10px 20%;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-controller input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid grey;
+    padding: 2px 5px;
+    font-size:15px ;
+}
+
+.form-controller label{
+    font-size: 15px;
+}
+
+
+.registration-form .form-controller{
+    margin: 10px 10px;
+}
+
+#submit-button{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 102%;
+    
+}
+
+#submit-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#fname:focus,
+#lname:focus,
+#email:focus {
+    background-color: rgb(193, 235, 234);
+}
+
+.registration-form:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top-button{
+    bottom: 0px;
+    right: 0px;
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+   
+}
