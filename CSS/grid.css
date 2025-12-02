@@ -1,0 +1,81 @@
+.container{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    
+    display: grid; /*always add to parent  */
+    grid-template-columns: 50% 50% ; /* to add 2 columns in a single row */
+/* Grid template colums help in adding columns for that we need to 
+specify the width of each columns */
+grid-template-columns: 25% 25% 25% 25%; /* to add 4 columns in a single row */
+/* Now for 10 columns we don't need to add 10 times width we use repeat property */
+grid-template-columns: repeat(5,20%) ;
+/* another way we use fraction(fr) */
+/* grid-template-columns: 1fr 1fr; */
+/* grid-template-columns: 2fr 1fr; */
+grid-template-rows: 10% 10% 10%;/* 1st 3 rows will get 10% height */
+grid-template-rows: repeat(3, 20%);
+/* We don't use grid template rows we use grid template columns to
+specify number of columns. rows are by default made so we use grid-template
+columns*/
+/* to create row and column gap */
+/* column-gap: 20px;
+row-gap: 10px; */
+gap: 10px 20px; /* shortcut for row and column gap */
+
+/* justify-self */
+grid-template-columns: repeat(4,25%);
+/* all the elements are present on top */
+/* justify-items: align items of the gird w.r.t x-axis */
+/* justify-items: start,end,center,stretch(default); */
+/* justify-items:start ;all the items will be present at the beginning  */
+justify-items:stretch;
+/* align-items: stretch(default),start,end,center align all the items in the grid
+w.r.t y-axis; */
+align-items: center;
+/* the movement of items are w.r.t cell not the whole container */
+/* place items is a short hand for align and justify items */
+place-items: start center;/* place-items:align-items justify-items */
+place-items: center;/* will be applied to both */
+/* justify-content: aligns complete grid w.r.t x-axis */
+grid-template-columns: repeat(4,10%);
+justify-content: start;
+justify-content: end;
+justify-content: center;
+/* justify-content will works only when the grid size is less than
+container size therefor we change the size of width of columns */
+/* item is for single element and content is for multiple elements */
+/* justify-content: start, end, space-around, space-evenly,
+space-between */
+justify-content: space-around; /* left and right 1 unit and space-between 2 elements is 2 units */
+justify-content: space-evenly;
+/* align-content: align the complete grid w.r.t y-axis; */
+align-content: end;
+align-content: start;
+align-content: space-around;
+align-content: space-between;
+align-content: space-evenly;
+align-content: stretch;/* default */
+/* place-content: align-content justify-content;  short hand*/
+
+}
+.container .item{
+    /* width: 20%; */
+    background-color: plum;
+    /* margin: 2px 5px; we use gap to create gap b/w row and column */
+    
+border: 1px solid purple;
+/* justify and align self are similar to justify and align items but
+they are applied in child*/
+/* justify-self: center;
+align-self: center; */
+
+}
+
+.item-1{
+    justify-self: center;
+align-self: center;
+/* can be applied to specific cell item as well */
+/* place-self: align-self justify-self; short hand */
+
+}
