@@ -1,32 +1,108 @@
 .container{
     background-color: lightblue;
-    height:400px ;
+    height:400px;
+
+    /* Flexbox activates */
     display: flex;
-    /* flex-direction: row (default); */
+
+    /* --------------------------
+       FLEX-DIRECTION 
+       Controls main axis direction:
+       row (default)  → left to right
+       row-reverse    → right to left
+       column         → top to bottom
+       column-reverse → bottom to top
+       --------------------------- */
+    /* flex-direction: row; */
     /* flex-direction: row-reverse; */
-    /* flex-direction:column; */
-    /* flex-direction:column-reverse ; */ 
-    /* Flex-direction changes the order and placement as well */
-   /* flex-wrap: wrap; */
-   /* flex-wrap: nowrap, wrap, wrap-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+
+    /* --------------------------
+       FLEX-WRAP
+       nowrap (default) → everything on one line
+       wrap             → items go to next line
+       wrap-reverse     → wrapped line appears above
+       --------------------------- */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
     /* flex-wrap: wrap-reverse; */
+
+
+    /* flex-flow = flex-direction + flex-wrap */
     flex-flow: row wrap;
-    /* justify-content: start(default),end, center, space-around, space-between, space-evenly; */
-justify-content: start;
-/* align-items: flex-start,center, flex-end, stretch(default); y-axis */
-/* align-items: center; */
-/* align-content:normal(default), flex-start, flex-end, center, stretch, space-around, space-between,space-evenly; y-axis */
-align-items: stretch;
-/* row-gap: 50px;
-column-gap: 50px; */
-/* gap:row-gap column-gap; */
-gap: 50px 20px;
+
+
+    /* --------------------------
+       JUSTIFY-CONTENT (MAIN AXIS)
+       Main-axis depends on flex-direction:
+       row    → horizontal
+       column → vertical
+
+       Values:
+       flex-start (default)
+       flex-end
+       center
+       space-between
+       space-around
+       space-evenly
+       --------------------------- */
+    justify-content: flex-start;
+
+
+    /* --------------------------
+       ALIGN-ITEMS (CROSS AXIS)
+       Cross-axis depends on flex-direction:
+       row    → vertical alignment
+       column → horizontal alignment
+
+       Values:
+       stretch (default)
+       flex-start
+       flex-end
+       center
+       baseline
+       --------------------------- */
+    align-items: stretch;
+
+
+    /* --------------------------
+       ALIGN-CONTENT (CROSS AXIS for MULTIPLE ROWS)
+       Works only when:
+       1. flex-wrap: wrap is used
+       2. Multiple rows exist
+
+       Values:
+       normal (default)
+       flex-start
+       flex-end
+       center
+       stretch
+       space-between
+       space-around
+       space-evenly
+       --------------------------- */
+    /* align-content: center; */
+
+
+    /* --------------------------
+       GAP
+       gap: row-gap column-gap
+       row-gap → space between rows
+       column-gap → space between columns
+       --------------------------- */
+    gap: 50px 20px;
 }
+
+
 .container .item{
     background-color: rgb(50,75,243);
-    margin: 10px 10px;
+    margin: 10px;
     color: white;
+
+    /* Items take 20% width of the container */
     width: 20%;
-    /* display: inline-block; flex is better */
-   
+
+    /* No need for inline-block → Flexbox is better */
 }

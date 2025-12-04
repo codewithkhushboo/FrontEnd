@@ -1,11 +1,11 @@
 .parent{
 position: relative;
-top: opx;
+top: 0px;
 }
 
-.child{
+/* .child{
 
-}
+} */
 .child-one{
             background-color: lightskyblue;
             position: relative;
